@@ -7,92 +7,150 @@
     <link rel="icon" href="../src/images/logo.png" type="image/jpng">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>Ruth Alemfanta - Home</title>
 </head>
 <body>
     <header>
-        <img class="logo" src="../src/images/logo.png" alt="" height="100" width="100">
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="aboutme.html">About me</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a></li>
-                <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a></li>
-                <li><a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a></li>
-                <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a></li>
-
-            </ul>
+        <nav class="navbar is-white">
+             <div class="navbar-brand">
+                <a href="home.html" class="navbar-item">
+                    <img src="../src/images/logo.png" alt="logo"  class="py-2 px-2">
+                </a>
+                <a class="navbar-burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div> 
+            <div class="navbar-menu" id="nav-links">
+                <div class="navbar-start">
+                        <a href="home.html" class="navbar-item">Home</a>
+                        <a href="aboutme.html" class="navbar-item">About me</a>
+                        <a href="portfolio.html" class="navbar-item">Portfolio</a>
+                        <a href="resume.html" class="navbar-item">Resume</a>
+                        <a href="contact.html" class="navbar-item">Contact</a>
+                </div>
+                <div class="navbar-end">
+                    <a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin navbar-item" target="_blank"></a>
+                    <a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram navbar-item" target="_blank"></a>
+                    <a href="https://x.com/fauxroot?s=35" class="fa fa-twitter navbar-item" target="_blank"></a>
+                    <a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat navbar-item" target="_blank"></a>
+                </div>
+            </div>
         </nav>
-    </header>
+     </header>
+
     <main>
-        <section class="home">
-           <h3>Hey there, im</h3>
-            <h1>RUTH ALEMFANTA</h1>
-            <h3>Get to know me</h3>
-            <p>I'm a software engineering student at Addis Ababa University, who has been interacting with computers for almost a lifetime and an enthusiast of our fellow brainies. I'm currently on my path of getting to know them more. Powered by Figma, vs code and coffee, I've also helped people turn their visions into digital collectibles.</p>
-            
-                <img class="home-photo" src="../src/images/home-image.png" alt="Ruth Alemfanta"  >
+        <section class="section">
+           <div class="conatiner">
+             <div class="columns is-vcentered">
+                <div class="column ">
+                    <h3 class="is-size-4 has-text-weight-bold has-text-black">Hey there, im</h3>
+                    <h1 class="is-size-1 has-text-weight-bold has-text-black">RUTH ALEMFANTA</h1>
+                    <h3 class="is-size-4 has-text-weight-bold has-text-black">Get to know me</h3>
+                    <p class="container has-text-black">I'm a software engineering student at Addis Ababa University, who has been interacting with computers for almost a lifetime and an enthusiast of our fellow brainies. I'm currently on my path of getting to know them more. Powered by Figma, vs code and coffee, I've also helped people turn their visions into digital collectibles.</p>
+                </div>
+                <div class="column">
+                    <img class="home-photo" src="../src/images/home-image.png" alt="Ruth Alemfanta" >
+                </div>
+             </div>
+           </div>
         </section>
+    
+            <section class="section">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column has-background-black is-rounded is-vcentered">
+                            <q class="has-text-white is-size-4">Computers are high-speed, accurate, and stupid; humans are incredibly slow, inaccurate, and brilliant; together they are powerful beyond imagination</q>
+                            <p class="has-text-white is-size-4">-Albert Einstein(I think)</p>
+                        </div>
+                        
+                    <div class="column">
+                            <video src="../src/images/einstin'svideo.mp4"  width="500" height="281" controls muted autoplay> 
+                            </video><br>
+                    </div>
+                    
+                    </div>
+                </div>
+            </section>
 
-        <div class="home-about">
-            <q class="qoute">Computers are high-speed, accurate, and stupid; humans are incredibly slow, inaccurate, and brilliant; together they are powerful beyond imagination</q>
-            <p class="caption">-Albert Einstein(I think)</p>
-            <video src="../src/images/einstin'svideo.mp4"  width="500" height="281" controls muted autoplay>
-                
-           </video><br>
-           <p class="qoute-description">Imagine a young girl who played games and read blogs about instances of the world stumbling across this quote. It enlightened me that despite the incredible capabilities of computers, they lack the brilliance and creativity inherent in human beings. They reminded me that I possess a unique power</p>
-           <a class="home-about-link" href="aboutme.html" target="_blank">TELL ME MORE</a>
-        </div>
+            <section class="section">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column has-background-black has-text-centered">
+                            <p class="has-text-white is-size-4">Imagine a young girl who played games and read blogs about instances of the world stumbling across this quote. It enlightened me that despite the incredible capabilities of computers, they lack the brilliance and creativity inherent in human beings. They reminded me that I possess a unique power</p>
+                            <a class="has-text-white" href="aboutme.html" target="_blank" >TELL ME MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <section class="home-portfolio">
+        <section class="section"> 
             <h2>What I can Do</h2>
             <h4>To some extent</h4>
-            <section class="works-webdev">
-                <h3> <i class="fa fa-code" aria-hidden="true"></i> Web Development</h3>
-                <p>I've been curious about web pages and how they worked since I intracted with one. It was in 11th grade when i first developed them, as a graded assignment. I've been experimenting with their making ever since. </p>
-            </section>
-            <section class="works-application">
-                <h3><i class="fa fa-apple" aria-hidden="true"></i> Applications</h3>
-                <p>As a beginner in the world of app development, I possess a growing skill set and a strong passion for creating innovative applications. While I am at the early stages of my journey, my dedication and eagerness to learn allow me to approach each project with enthusiasm and commitment to continuous improvement. </p>
-            </section>
-            <figure class="portfolio">
-                <img class="websites" src="../src/images/neaty.png" alt="Neaty website" height="100"  title="Website I made for Neaty">
-                <img class="websites" src="../src/images/matthew.png" alt="Matthew Perry tribute page" height="100"  title="Website I made for Matthew Perry tribute.">
-                <img class="websites" src="../src/images/p2.png" alt="second page of the tribute" height="100" title="second page">
-                <img class="websites" src="../src/images/midnight.png" alt="Midnight" height="100" title="Website I made for Midnight">
-               
-            </figure>
-            <a href="portfolio.html" target="_blank">VIEW MY ENTIRE PORTFOLIO</a>
+            <div class="columns">
+                <div class="column is-3">
+                    <h3> <i class="fa fa-code" aria-hidden="true"></i> Web Development</h3>
+                    <p>I've been curious about web pages and how they worked since I intracted with one. It was in 11th grade when i first developed them, as a graded assignment. I've been experimenting with their making ever since. </p>
+                </div>
+                <div class="column is-3">
+                    <h3><i class="fa fa-apple" aria-hidden="true"></i> Applications</h3>
+                    <p>As a beginner in the world of app development, I possess a growing skill set and a strong passion for creating innovative applications. While I am at the early stages of my journey, my dedication and eagerness to learn allow me to approach each project with enthusiasm and commitment to continuous improvement. </p>
+                </div>
+                <div class="column is-flex is-flex-wrap-wrap">
+                    <img class="image is-128x128 mx-6" src="../src/images/neaty.png" alt="Neaty website" height="100"  title="Website I made for Neaty">
+                    <img class="image is-128x128 mx-6" src="../src/images/matthew.png" alt="Matthew Perry tribute page" height="100"  title="Website I made for Matthew Perry tribute.">
+                    <img class="image is-128x128 mx-6" src="../src/images/p2.png" alt="second page of the tribute" height="100" title="second page">
+                    <img class="image is-128x128 mx-6" src="../src/images/midnight.png" alt="Midnight" height="100" title="Website I made for Midnight">
+                </div>
+            </div>
+            <div class="has-text-centered" >
+                <a href="portfolio.html" target="_blank">VIEW MY ENTIRE PORTFOLIO</a> 
+            </div>
         </section>
-        <div class="home-resume">
+
+
+        <div class="is-flex is-justify-content-space-evenly is-align-items-baseline">
             <a href="http://www.aau.edu.et/" target="_blank"><img src="../src/images/AAU.jpeg" alt="AAU logo"></a>
             <a href="https://www.facebook.com/p/Bahir-Dar-Academy-100075447537566/" target="_blank"><img src="../src/images/BDA.jpeg" alt="BDA logo"></a>
             <a href="https://www.coursera.org/" target="_blank"><img src="../src/images/courseralogo.png" alt="coursera logo"></a>
             <a href="https://www.edx.org/"><img src="../src/images/edx.png" alt="Edx logo"></a>
             <a href="resume.html">see more</a>
         </div>
-
+        
     </main>
+
     <footer>
-       <h2> <a href="contact.html" target="_blank">Let's Link</a></h2>
-        <h2>Socials</h2>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a></li>
-            <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a></li>
-            <li><a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a></li>
-            <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a></li>
-        </ul>
-        <h2>Address</h2>
-        <address>
-            <ul>
-                <li><a href="mailto:ruthalemfanta@gmail.com" class="fa fa-envelope" target="_blank">ruthalemfanta@gmail.com</a></li>
-                <li><a href="tel:+251922273737" class="fa fa-phone"> +251 922273737</a></li>
-                <li><a href="2QG7+HXF,Palace,MenelikIIAve,AddisAbaba" class="fa fa-home">4 Kilo, Addis Ababa</a></li>
-            </ul>
-        </address>
+      <section class="mt-6">
+        <div>
+            <div class="columns">
+                <div class="column is-7 has-text-centered p-6 has-background-black">
+                    <h2> <a href="contact.html" target="_blank" class="mt-6 is-size-1">Let's Link</a></h2>
+                </div>
+                <div class="column has-background-black">
+                    <h2 class="is-size-4 has-text-white">Socials</h2>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a></li>
+                    <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a></li>
+                    <li><a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a></li>
+                    <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a></li>
+                </ul>
+                </div>
+               <div class="column has-background-black">
+                <h2 class="is-size-4 has-text-white">Address</h2>
+                <address>
+                    <ul>
+                        <li><a href="mailto:ruthalemfanta@gmail.com" class="fa fa-envelope" target="_blank">ruthalemfanta@gmail.com</a></li>
+                        <li><a href="tel:+251922273737" class="fa fa-phone"> +251 922273737</a></li>
+                        <li><a href="2QG7+HXF,Palace,MenelikIIAve,AddisAbaba" class="fa fa-home">4 Kilo, Addis Ababa</a></li>
+                    </ul>
+                </address>
+               </div>
+            </div>
+        </div>
+      </section>
     </footer>
+    <script src="../src/Js/script.js"></script>
 </body>
 </html>
